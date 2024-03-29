@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .display_flex{
+                display: flex;
+                padding-bottom: 10px;
+            }
+            .display_flex label{
+                width: 100px;
+            }
+
+            .display_flex input{
+                width: 200px;
+                margin-right: 10px;
+            }
+
+            .display_button{
+                display: flex;
+            }
+            .display_button input{
+                width: 100px;
+                margin-right: 20px;
+            }
+            
+            div{
+                padding-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form action="loginController" method="POST">
+            <div class="display_flex">
+                <label for="name">Username: </label>
+                <input type="text" name="txtName" value="">
+            </div>
+            <div class="display_flex">
+                <label for="password">Password: </label>
+                <input type="password" name="txtPassword" value="">
+            </div>
+            <div class="display_button">
+                <input type="submit" value="Login" name="btAction">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+        <!--        <a href="bookStore.html">Buy Web application books </a>-->
+        <div>
+            <a href="bookStore.jsp">Buy Web application books</a>
+        </div>
+        <div>
+            <a href="createAccount.html">Click here to Sign up</a>
+        </div>
+    </body>
+</html>

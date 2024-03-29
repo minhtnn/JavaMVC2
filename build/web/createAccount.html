@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Create Account</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .display_flex{
+                display: flex;
+                padding-bottom: 10px;
+            }
+            .display_flex label{
+                width: 100px;
+            }
+
+            .display_flex input{
+                width: 200px;
+                margin-right: 10px;
+            }
+
+            .display_button{
+                display: flex;
+            }
+            .display_button input{
+                width: 100px;
+                margin-right: 20px;
+            }
+            
+            div{
+                padding-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Sign up</h2>
+        <form action="createAccountController" method="POST">
+            <div class="display_flex">
+                <label for="username">Username </label>
+                <input type="text" name="txtUsername" value="" /> (6 - 30 characters)
+            </div>
+            <div class="display_flex">
+                <label for="password">Password</label>
+                <input type="password" name="txtPassword" value="" />(6 - 20 characters)
+            </div>
+            <div class="display_flex">
+                <label for="confirm">Confirm </label>
+                <input type="password" name="txtConfirm" value="" />
+            </div>
+            <div class="display_flex">
+                <label for="fullname">Full name:</label>
+                <input type="text" name="txtFullname" value="" />(2 - 50 characters)
+            </div>
+            
+            <div>
+                <input type="submit" value="Create new account" name="btAction" />
+                <input type="reset" value="Reset" />
+            </div>
+        </form>
+
+    </body>
+</html>
